@@ -1,10 +1,17 @@
 .button {
-    width: 30vh;
-    height: 3vh;
+    width: 35vh; 
+    height: 5vh; 
+    padding: 10px 15px; 
     border: solid 1px black;
     border-radius: 10px;
     background: linear-gradient(80deg, rgb(130, 240, 120) 0%, rgb(90, 245, 193) 33%, rgb(58, 241, 186) 66%, rgb(130, 240, 120) 100%);
+    white-space: nowrap; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
+
 
 .button:hover {
     transform: scale(105%);
