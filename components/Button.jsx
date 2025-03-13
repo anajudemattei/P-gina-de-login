@@ -1,7 +1,7 @@
-import styles from "../styles/Button.module.css"
+import styles from "../styles/Button.module.css";
 
-export default function Button({text}) {
+export default function Button({ text, onClick }) { // Added onClick prop
     return (
-        <button className={styles.button}>{text}</button>
-    )
+        <button className={styles.button} onClick={onClick}>{text}</button> // Used onClick prop
+    );
 }
