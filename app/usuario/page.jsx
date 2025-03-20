@@ -14,9 +14,18 @@ export default function Usuario() {
                 <h1>USUÁRIO</h1>
                 <h3>Bem-vindo ao seu perfil!</h3>
                 <p><strong>Nome:</strong> Ana Julia Demattei</p>
-                <p><strong>Email:</strong> anajudemattei@email.com</p>
+                <p><strong>Email:</strong> anajudemattei@gmail.com</p>
                 <p><strong>Data de Nascimento:</strong> 26/04/2008</p>
                 <p><strong>Turma:</strong> Técnico em Desenvolvimento de Sistemas 1</p>
+                <p><strong>Competencias:</strong> </p>
+                <div className="competencias">
+                    <img src="nodejs.png" alt="nodejs" />
+                    <img src="html.png" alt="html" />
+                    <img src="css.png" alt="css" />
+                    <img src="postgree.png" alt="postgrees" />
+                    <img src="postman.png" alt="postman" />
+                    <img src="nextjs.png" alt="nextjs" />
+                </div>
                 <Button text="Editar" onClick={() => alert("Função de edição ainda não implementada!")} />
                 <Button text="Voltar" onClick={() => router.push("/login")} />
             </div>

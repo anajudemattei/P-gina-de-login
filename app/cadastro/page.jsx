@@ -7,6 +7,25 @@ import { useRouter } from "next/navigation";
 export default function Cadastro() {
     const router = useRouter();
     
+    const handleCheck = () => {
+        if (input1 !== input2) {
+            setMatch(false);
+            setError("As senhas não conferem");
+        } else if (input1.length < 6) {
+            setMatch(false);
+            setError("A senha deve ter no mínimo 6 caracteres");
+        } else if (input1.length === 0) {
+            setMatch(false);
+            setError("Preencha o input 1");
+        } else if (input2.length === 0) {
+            setMatch(false);
+            setError("Preencha o input 2");
+        } else {
+            setMatch(true);
+            setError("Sucesso");
+        }
+    };
+
     return (
         <div className="container">
             <div className="cadastro">
