@@ -58,3 +58,42 @@
     box-sizing: border-box;
     overflow: hidden;
 }
+
+.cadastro input {
+    background-color: rgb(255, 255, 255);
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 6px 0;
+    width: 35vh;
+    height: 10vh;
+}
+
+.input:hover {
+    transform: scale(105%);
+    transition: all 0.3 ease-in;
+}
+
+.cadastro button {
+    width: 35vh; 
+    height: 5vh; 
+    padding: 10px 15px; 
+    border-radius: 3px;
+    background: linear-gradient(80deg, rgb(130, 240, 120) 0%, rgb(90, 245, 193) 33%, rgb(58, 241, 186) 66%, rgb(130, 240, 120) 100%);
+    white-space: nowrap; 
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.cadastro button:hover {
+    transform: scale(105%);
+    transition: all 0.3s ease-in;
+}
+
+.cadastrar-button {
+    border: none;
+}
